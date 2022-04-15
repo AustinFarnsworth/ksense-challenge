@@ -11,6 +11,10 @@ app.get("/styles.css", (req, res) => {
   res.sendFile(path.join(__dirname, "../styles.css"));
 });
 
+app.get("/styles.css", (req, res) => {
+  res.sendFile(path.join(__dirname, "../index.js"));
+});
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
